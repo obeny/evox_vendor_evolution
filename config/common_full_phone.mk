@@ -9,6 +9,9 @@ $(call inherit-product, vendor/lineage/config/telephony.mk)
 
 # GMS
 WITH_GMS ?= true
+# Use mini gapps by default
+TARGET_USES_MINI_GAPPS ?= true
+
 ifeq ($(WITH_GMS),true)
 ifeq ($(TARGET_USES_MINI_GAPPS),true)
 $(call inherit-product, vendor/gms/gms_mini.mk)
