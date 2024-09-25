@@ -22,7 +22,6 @@ endif
 # Apps
 PRODUCT_PACKAGES += \
     Backgrounds \
-    Glimpse \
     LatinIME
 
 # Charger
