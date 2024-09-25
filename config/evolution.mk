@@ -2,7 +2,7 @@
 PRODUCT_PACKAGES += \
     EvoEgg
 
-ifeq ($(EVO_BUILD_TYPE),Official)
+#ifeq ($(EVO_BUILD_TYPE),Official)
 PRODUCT_PACKAGES += \
     Updater
 
@@ -10,7 +10,7 @@ ifeq ($(WITH_GMS),false)
 PRODUCT_PACKAGES += \
     UpdaterVanillaOverlay
 endif
-endif
+#endif
 
 ifeq ($(TARGET_SUPPORTS_64_BIT_APPS),true)
 PRODUCT_PACKAGES += \
