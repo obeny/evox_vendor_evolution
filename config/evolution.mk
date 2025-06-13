@@ -83,12 +83,8 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
     persist.arm64.memtag.app.com.android.nfc=off \
     persist.arm64.memtag.process.system_server=off
 
-# Private keys
-ifeq ($(EVO_BUILD_TYPE),Official)
+# Build keys
 include vendor/evolution-priv/keys/keys.mk
-else
--include vendor/evolution-priv/keys/keys.mk
-endif
 
 BYPASS_CHARGE_SUPPORTED ?= false
 PRODUCT_SYSTEM_PROPERTIES += \
